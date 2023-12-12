@@ -9,3 +9,4 @@ turtle.hideturtle()
 for i in range(10,1550,9):
     turtle.fd(i)
     turtle.left(119.3)
+s

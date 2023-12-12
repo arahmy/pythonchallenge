@@ -15,7 +15,7 @@ while long > 20:
 """
 
 # Défi 1 - Exercice b
-from turtle import *
+from turtle import s*
 
 long = 400
 up()
