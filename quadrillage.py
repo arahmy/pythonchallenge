@@ -31,4 +31,3 @@ draw_vertical_line(2 * cell_size, -cell_size)
 
 # Attendre que l'utilisateur ferme la fenêtre
 turtle.done()
-s
