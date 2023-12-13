@@ -2,7 +2,7 @@ from turtle import *
 from random import *
 
 speed(0)
-title("Quadrillage Morpion")
+title("Quadrillage - Morpion")
 Taille=600
 Marge =30
 setup(Taille,Taille+100)
