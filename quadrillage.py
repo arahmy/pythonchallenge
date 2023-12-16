@@ -1,4 +1,5 @@
 from turtle import *
+from colorama import *
 
 def Quadrillage(x, y, taille, nb):
     up()
@@ -34,16 +35,17 @@ def Quadrillage(x, y, taille, nb):
     forward((nb - 1) * taille / 2)
 
 # Input - Prise en compte des paramètres
-x = float(input("Entrez la coordonnée x : "))
-y = float(input("Entrez la coordonnée y : "))
-taille = float(input("Entrez la taille de chaque case (La taille 10 est recommandée) : "))
-nb_cases = int(input("Entrez le nombre de cases par côté : "))
+x = float(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la coordonnée x : "))
+y = float(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la coordonnée y : "))
+taille = float(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la taille de chaque case" + Fore.YELLOW + " (La taille 10 est recommandée) : " + Fore.RESET))
+nb_cases = int(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez le nombre de cases par côté : "))
 
 speed(0)
 title("Quadrillage - Morpion")
 setup(800, 800)
 
-# Utilisation de la fonction Quadrillage avec les paramètres renseignés
+# Appel fonction
 Quadrillage(x, y, taille, nb_cases)
 
+# Laisser la page ouverte
 mainloop()
