@@ -1,5 +1,9 @@
-"""# Défi 1 - Exercice a
+"""
+# Défi 1 - Exercice a
+import turtle
 from turtle import *
+screen = turtle.Screen()
+screen.title('Carré en Spirale - Défi 1')
 
 long=400
 up()
@@ -11,18 +15,25 @@ while long > 20:
     long = long - (long*2/100)
     forward(long)
     left(93)
-
 """
 
 # Défi 1 - Exercice b
-from turtle import *
+"""
+import turtle
 
-long = 400
-up()
-speed(0)
-left(90)
-down()   
+screen = turtle.Screen()
+screen.title('Triangle en Spirale - Défi 1')
+turtle.setup(1000,1000)
+screen.setworldcoordinates(-1000,-1000,1000,1000)
+turtle.speed(0)
+turtle.hideturtle()
 
+for i in range(10,1550,9):
+    turtle.fd(i)
+    turtle.left(119.3)
+
+turtle.mainloop() # Laisser la page ouverte
+"""
 """
 # Défi 2
 from turtle import *
