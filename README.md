@@ -56,7 +56,6 @@ git clone https://github.com/groupeonyx/pythonchallenge.git
 
 ```sh
 pip install colorama
-pip install pytictoc
 ```
 
 4. Execute the script (defi_python.py)
