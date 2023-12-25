@@ -72,10 +72,14 @@ def Quadrillage(x, y, taille, nb):
     right(90)
     forward((nb - 1) * taille / 2)
 
+
 # Input - Prise en compte des paramètres
+# Float = Permet de convertir un nombre entier en un à nombre à virgule
+print(Fore.BLUE + "[Défi Python - Logs]" + Fore.RESET + " Vous avez lancé le programme.")
 x = float(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la coordonnée x : "))
 y = float(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la coordonnée y : "))
-taille = float(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la taille de chaque case" + Fore.YELLOW + " (La taille 10 est recommandée) : " + Fore.RESET))
+taille = float(input(
+    Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez la taille de chaque case" + Fore.YELLOW + " (La taille 10 est recommandée) : " + Fore.RESET))
 nb_cases = int(input(Fore.RED + "[Défi Python]" + Fore.RESET + " Entrez le nombre de cases par côté : "))
 
 speed(0)
@@ -86,8 +90,9 @@ setup(800, 800)
 Quadrillage(x, y, taille, nb_cases)
 
 # Laisser la page ouverte
-mainloop()
 
+turtle.Screen().exitonclick()
+print(Fore.BLUE + "[Défi Python - Logs]" + Fore.RESET + " Vous avez mis fin au programme.")
 """
 """
 # Défi 3 - Dictionnaire :
@@ -106,4 +111,71 @@ def stat(txt):
 resultat = stat("TAGADA BONBONS ")
 print(resultat)
 """
-# Défi 4 - Forêt 
+# Défi 4 - Forêt
+
+import turtle
+from turtle import *
+import random
+from colorama import *
+
+def drawtree(x, y, taille):
+    speed(10) # Vitesse accélérée
+    # Modèle de base du sapin
+    color("saddlebrown")
+    begin_fill()
+    penup()
+    goto(x - taille / 10, y - taille / 5)  # Permet de centrer le tronc du sapin en le commençant vers la gauche pour plus d'équilibre
+    pendown()
+    for _ in range(2):
+        forward(taille / 5)
+        right(90)
+        forward(taille / 10)
+        right(90)
+    end_fill()
+
+# Permet de faire des réglagles sur la couleur, la position initiale, dessiner les branches, et le remplissage (couleur=
+
+    color("forestgreen")
+    penup()
+    goto(x - taille / 2, y - taille / 5)
+    pendown()
+    begin_fill()
+    for _ in range(3):
+        forward(taille)
+        left(120)
+    end_fill()
+
+    penup()
+    goto(x - taille / 2 + 10, y + taille / 5)
+    pendown()
+    begin_fill()
+    for _ in range(3):
+        forward(taille - 20)
+        left(120)
+    end_fill()
+
+    penup()
+    goto(x - taille / 2 + 20, y + taille / 2)
+    pendown()
+    begin_fill()
+    for _ in range(3):
+        forward(taille - 40)
+        left(120)
+    end_fill()
+
+# Informations Screen - Paramètres
+screen = turtle.Screen()
+screen.title('Sapin de Noel - Défi Python')
+
+# Génération aléatoire entre 1 et 50 sapins + Message d'information
+gen_sapins = random.randint(1, 50)
+print(Fore.RED + "[Défi Python - Info] " + Fore.RESET + "Le nombre de sapin choisi est", gen_sapins)
+
+# Génération aléatoire des tailles et des positions
+for _ in range(gen_sapins):
+    x = random.randint(-200, 200)
+    y = random.randint(-200, 200)
+    taille = random.randint(50, 150)
+    drawtree(x, y, taille)
+
+done()
