@@ -86,5 +86,5 @@ Distributed under the MIT License. See [LICENSE](https://github.com/groupeonyx/p
 
 ## Authors
 
-* **Polo - Groupe Onyx** - *Spécialité NSI Première* - [Polo - Groupe Onyx](https://github.com/groupeonyx/) - *Project overview*
+* **Arthur RAHMY** - *Spécialité NSI Première* - [Arthur RAHMY](https://github.com/arahmy/) - *Project overview*
 * **Lola Debeaupuis** - *Spécialité NSI Première* - [Lola Debeaupuis](N/A) - *Collaboration*
