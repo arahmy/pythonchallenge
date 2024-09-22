@@ -49,7 +49,7 @@ Python for Mac/Windows/Linux : https://www.python.org/
 2. Clone the repo
 
 ```sh
-git clone https://github.com/groupeonyx/pythonchallenge.git
+git clone https://github.com/arahmy/pythonchallenge.git
 ```
 
 3. Install pip modules
